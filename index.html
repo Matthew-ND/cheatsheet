@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" rel="stylesheet">
+    <title>Moving Elements | Cheatsheet</title>
+</head>
+<body>
+    <h1>Moving Elements</h1>
+<!-- POSITION-->
+    <table>
+        <thead>
+           <tr>
+               <th colspan="2"><h2>Position:</h2></th>
+           </tr>
+           <tr>
+               <th class="col-one">Value</th>
+               <th>Description</th>
+           </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class='css'>static;</span></td>
+                <td>The element is positioned according to the normal flow of the document. The <span class='css'>top</span>, <span class='css'>right</span>, <span class='css'>bottom</span>, <span class='css'>left</span> and <span class='css'>z-index</span> properties have no effect. This is the default value.</td>
+            </tr>
+            <tr>
+                <td><span class='css'>relative;</span></td>
+                <td>The element is positioned according to the normal flow of the document, and then offset relative to itself based on the values of <span class='css'>top</span>, <span class='css'>right</span>, <span class='css'>bottom</span> and <span class='css'>left</span>. </td>
+            </tr>
+            <tr>
+                <td><span class='css'>absolute;</span></td>
+                <td>The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed relative to the initial containing block. Its final position is determined by the values of <span class='css'>top</span>, <span class='css'>right</span>, <span class='css'>bottom</span> and <span class='css'>left</span>.</td>
+            </tr>
+            <tr>
+                <td><span class='css'>fixed;</span></td>
+                <td>The element is removed from the normal document flow, and no space is created for the element in the page layout. Its final position is determined by the values of <span class='css'>top</span>, <span class='css'>right</span>, <span class='css'>bottom</span> and <span class='css'>left</span>.</td>
+            </tr>
+            <tr>
+                <td><span class='css'>sticky;</span></td>
+                <td>The element is positioned according to the normal flow of the document, and then offset relative to its nearest scrolling ancestor and containing block (nearest block-level ancestor), including table-related elements, based on the values of <span class='css'>top</span>, <span class='css'>right</span>, <span class='css'>bottom</span> and <span class='css'>left</span>. The offset does not affect the position of any other elements.</td>
+            </tr>
+        </tbody>
+    </table>
+<!--DISPLAY-->
+    <table>
+        <thead>
+           <tr>
+               <th colspan="2"><h2>Display:</h2></th>
+           </tr>
+           <tr>
+               <th class='col-one'>Value</th>
+               <th>Description</th>
+           </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class='css'>in-line;</span></td>
+                <td>The element generates one or more inline element boxes that do not generate line breaks before or after themselves. In normal flow, the next element will be on the same line if there is space.</td>
+            </tr>
+            <tr>
+                <td><span class='css'>block;</span></td>
+                <td>The element generates a block element box, generating line breaks both before and after the element when in the normal flow.</td>
+            </tr>
+            <tr>
+                <td><span class='css'>inline-block;</span></td>
+                <td>The element generates a block element box that will be flowed with surrounding content as if it were a single inline box (behaving much like a replaced element would).</td>
+            </tr>
+        </tbody>
+    </table>
+<!--OTHER-->
+    <table>
+        <thead>
+           <tr>
+               <th colspan="3"><h2>OTHER</h2></th>
+           </tr>
+           <tr>
+               <th class="col-one">Property</th>
+               <th class="col-two">Value</th>
+               <th>Description</th>
+           </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class='css'>z-index:</span></td>
+                <td>Positive Integer or <span class='css'>auto;</span></td>
+                <td>This CSS property sets the z-order of a positioned element and its descendants or flex items. Overlapping elements with a larger z-index cover those with a smaller one.</td>
+            </tr>
+            <tr>
+                <td><span class='css'>float:</span></td>
+                <td><span class='css'>none;</span> <span class='css'>left;</span> <span class='css'>right;</span></td>
+                <td>This CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it.</td>
+            </tr>
+            <tr>
+                <td><span class='css'>clear:</span></td>
+                <td><span class='css'>none;</span> <span class='css'>left;</span> <span class='css'>right;</span> <span class='css'>both;</span></td>
+                <td>This CSS property sets whether an element must be moved below (cleared) floating elements that precede it.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
